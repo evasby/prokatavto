@@ -7,7 +7,7 @@
 	<!--[if lt IE 9]>
   	<script type='text/javascript' src="js/html5shiv.min.js"></script>
   <![endif]-->
-	<title>Внутренняя страница</title>
+	<title>Главная</title>
   <!-- build:css css/all.css -->
   	<link rel="stylesheet" href="/css/all.css">
   <!-- endbuild -->
@@ -18,6 +18,419 @@
   <!--endbuild-->
 </head>
 <body class="front">
+	<header class="header">
+		<div class="sitewrap">
+			<div class="header_top">
+				<a href="/" class="logo">ProkatAvto</a>
+				<div class="header_right">
+					<div class="phones">
+						<div class="phones_item">
+							<p>+375(29) <span style="font-size:19px;color:#01b75a;">636-17-23<span></p>
+						</div>
+						<div class="phones_item">
+							<p>+375(17) <span style="font-size:19px;color:#01b75a;">306-48-98<span></p>
+						</div>
+						<div class="phones_item">
+							<a href="#" class="callback">Оставить заявку</a>
+						</div>
+					</div>
+					<nav class="menutop">
+						<ul class="menutop_list">
+							<li class="menutop_item">
+								<a href="/" class="menutop_link">Главная</a>
+							</li>
+							<li class="menutop_item">
+								<a href="news.html" class="menutop_link">Новости</a>
+							</li>
+							<li class="menutop_item">
+								<a href="article.html" class="menutop_link">Условия аренды</a>
+							</li>
+							<li class="menutop_item">
+								<a href="price.html" class="menutop_link">Прайс-лист</a>
+							</li>
+							<li class="menutop_item">
+								<a href="contacts.html" class="menutop_link">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="header_bottom">
+				<div class="avtoclass">
+					<span class="avtoclass_title">Выберите класс автомобиля</span>
+					<ul class="avtoclass_list">
+						<li class="avtoclass_item">
+							<a href="catalog.html" class="avtoclass_link">Эконом класс</a>
+						</li>
+						<li class="avtoclass_item">
+							<a href="catalog.html" class="avtoclass_link">Средний класс</a>
+						</li>
+						<li class="avtoclass_item">
+							<a href="catalog.html" class="avtoclass_link">Бизнес класс</a>
+						</li>
+						<li class="avtoclass_item">
+							<a href="catalog.html" class="avtoclass_link">Микроавтобусы</a>
+						</li>
+						<li class="avtoclass_item">
+							<a href="catalog.html" class="avtoclass_link">Внедорожники</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="sitewrap">
+		<main class="main">
+			<h1>Прокат и аренда автомобилей</h1>
+			<section class="catalog">
+				<div class="filter">
+					<div class="filter_item">
+						<label for="select1">Класс автомобиля</label>
+						<select name="class" id="select1">
+							<option value="All" selected="selected">Выберите класс</option>
+							<option value="1">Эконом класс</option>
+							<option value="2">Средний класс</option>
+							<option value="3">Бизнес класс</option>
+							<option value="4">Кабриолеты и купе</option>
+							<option value="5">Джипы и внедорожники</option>
+							<option value="6">Минивены и микроавтобусы</option>
+							<option value="7">Грузовые авто</option>
+							<option value="8">Аренда автомобиля с водителем</option>
+							<option value="9">Долгосрочная аренда</option>
+							<option value="10">Авто с правом выезда за границу</option>
+						</select>
+					</div>
+					<div class="filter_item">
+						<label for="select2">Марка автомобиля</label>
+						<select name="marka" id="select2">
+							<option value="All" selected="selected">Выберите марку</option>
+							<option value="1">Эконом класс</option>
+							<option value="2">Средний класс</option>
+							<option value="3">Бизнес класс</option>
+							<option value="4">Кабриолеты и купе</option>
+							<option value="5">Джипы и внедорожники</option>
+							<option value="6">Минивены и микроавтобусы</option>
+							<option value="7">Грузовые авто</option>
+							<option value="8">Аренда автомобиля с водителем</option>
+							<option value="9">Долгосрочная аренда</option>
+							<option value="10">Авто с правом выезда за границу</option>
+						</select>
+					</div>
+					<div class="filter_item">
+						<label for="select3">Трансмиссия</label>
+						<select name="trans" id="select3">
+							<option value="All" selected="selected">Выберите коробку</option>
+							<option value="1">Эконом класс</option>
+							<option value="2">Средний класс</option>
+							<option value="3">Бизнес класс</option>
+							<option value="4">Кабриолеты и купе</option>
+							<option value="5">Джипы и внедорожники</option>
+							<option value="6">Минивены и микроавтобусы</option>
+							<option value="7">Грузовые авто</option>
+							<option value="8">Аренда автомобиля с водителем</option>
+							<option value="9">Долгосрочная аренда</option>
+							<option value="10">Авто с правом выезда за границу</option>
+						</select>
+					</div>
+					<div class="filter_submit">
+						<input type="submit" value="Применить">
+					</div>
+				</div>
+				<div class="catalog_wrap">
+					<a href="catalog-detail.html" class="catalog_item">
+						<span class="catalog_image"><img src="images/content/catalog-preview.jpg" alt=""></span>
+						<span class="catalog_name">Volkswagen Jetta 2016г</span>
+						<span class="catalog_bottom">
+							<span class="catalog_price">от 86 BYN</span>
+							<span class="catalog_more">Подробнее...</span>
+						</span>
+					</a>
+					<a href="catalog-detail.html" class="catalog_item">
+						<span class="catalog_image"><img src="images/content/catalog-preview.jpg" alt=""></span>
+						<span class="catalog_name">Volkswagen Jetta 2016г</span>
+						<span class="catalog_bottom">
+							<span class="catalog_price">от 86 BYN</span>
+							<span class="catalog_more">Подробнее...</span>
+						</span>
+					</a>
+					<a href="catalog-detail.html" class="catalog_item">
+						<span class="catalog_image"><img src="images/content/catalog-preview.jpg" alt=""></span>
+						<span class="catalog_name">Volkswagen Jetta 2016г</span>
+						<span class="catalog_bottom">
+							<span class="catalog_price">от 86 BYN</span>
+							<span class="catalog_more">Подробнее...</span>
+						</span>
+					</a>
+					<a href="catalog-detail.html" class="catalog_item">
+						<span class="catalog_image"><img src="images/content/catalog-preview.jpg" alt=""></span>
+						<span class="catalog_name">Volkswagen Jetta 2016г</span>
+						<span class="catalog_bottom">
+							<span class="catalog_price">от 86 BYN</span>
+							<span class="catalog_more">Подробнее...</span>
+						</span>
+					</a>
+					<a href="catalog-detail.html" class="catalog_item">
+						<span class="catalog_image"><img src="images/content/catalog-preview.jpg" alt=""></span>
+						<span class="catalog_name">Volkswagen Jetta 2016г</span>
+						<span class="catalog_bottom">
+							<span class="catalog_price">от 86 BYN</span>
+							<span class="catalog_more">Подробнее...</span>
+						</span>
+					</a>
+					<a href="catalog-detail.html" class="catalog_item">
+						<span class="catalog_image"><img src="images/content/catalog-preview.jpg" alt=""></span>
+						<span class="catalog_name">Volkswagen Jetta 2016г</span>
+						<span class="catalog_bottom">
+							<span class="catalog_price">от 86 BYN</span>
+							<span class="catalog_more">Подробнее...</span>
+						</span>
+					</a>
+					<a href="catalog-detail.html" class="catalog_item">
+						<span class="catalog_image"><img src="images/content/catalog-preview.jpg" alt=""></span>
+						<span class="catalog_name">Volkswagen Jetta 2016г</span>
+						<span class="catalog_bottom">
+							<span class="catalog_price">от 86 BYN</span>
+							<span class="catalog_more">Подробнее...</span>
+						</span>
+					</a>
+					<a href="catalog-detail.html" class="catalog_item">
+						<span class="catalog_image"><img src="images/content/catalog-preview.jpg" alt=""></span>
+						<span class="catalog_name">Volkswagen Jetta 2016г</span>
+						<span class="catalog_bottom">
+							<span class="catalog_price">от 86 BYN</span>
+							<span class="catalog_more">Подробнее...</span>
+						</span>
+					</a>
+					<a href="catalog-detail.html" class="catalog_item">
+						<span class="catalog_image"><img src="images/content/catalog-preview.jpg" alt=""></span>
+						<span class="catalog_name">Volkswagen Jetta 2016г</span>
+						<span class="catalog_bottom">
+							<span class="catalog_price">от 86 BYN</span>
+							<span class="catalog_more">Подробнее...</span>
+						</span>
+					</a>
+					<a href="catalog-detail.html" class="catalog_item">
+						<span class="catalog_image"><img src="images/content/catalog-preview.jpg" alt=""></span>
+						<span class="catalog_name">Volkswagen Jetta 2016г</span>
+						<span class="catalog_bottom">
+							<span class="catalog_price">от 86 BYN</span>
+							<span class="catalog_more">Подробнее...</span>
+						</span>
+					</a>
+					<a href="catalog-detail.html" class="catalog_item">
+						<span class="catalog_image"><img src="images/content/catalog-preview.jpg" alt=""></span>
+						<span class="catalog_name">Volkswagen Jetta 2016г</span>
+						<span class="catalog_bottom">
+							<span class="catalog_price">от 86 BYN</span>
+							<span class="catalog_more">Подробнее...</span>
+						</span>
+					</a>
+					<a href="catalog-detail.html" class="catalog_item">
+						<span class="catalog_image"><img src="images/content/catalog-preview.jpg" alt=""></span>
+						<span class="catalog_name">Volkswagen Jetta 2016г</span>
+						<span class="catalog_bottom">
+							<span class="catalog_price">от 86 BYN</span>
+							<span class="catalog_more">Подробнее...</span>
+						</span>
+					</a>
+				</div>
+			</section>
+			<!-- <section class="form-order">
+				<h2 class="form-order_title">Онлайн заказ авто</h2>
+				<p>Оставьте заявку прямо сейчас, мы ответим!</p>
+				<form action="#">
+					<div class="form-order_wrap">
+						<div class="form-order_left">
+							<input type="text">
+							<input type="text">
+						</div>
+						<div class="form-order_right">
+							<input type="text">
+							<div class="form-order_group">
+								<input type="text">
+								<input type="text">
+							</div>
+						</div>
+					</div>
+					<input type="submit" value="Заказать">
+				</form>
+			</section> -->
+			<div class="user-content">
+				<p>АРЕНДА АВТОМОБИЛЕЙ В МИНСКЕ - МАКСИМУМ КОМФОРТА, МИНИМУМ ХЛОПОТ.</p>
+				<p>Услуга проката автомобилей когда-то казалась небывалой роскошью. Тема «Rent a car» в учебнике английского имела фантастический оттенок в стране победившего социализма, где автомобиль никогда не был привычным и обыкновенным средством передвижения.</p>
+				<p>Все изменилось с тех пор. Прокат авто предлагают многие фирмы, и это уже не уникальный сервис для избранных, это услуга, доступная каждому.</p>
+				<h2>Преимущества проката автомобиля очевидны:</h2>
+				<ul>
+					<li>вам нужно встретить друзей в аэропорту, но 5 человек со всем багажом никак поместятся в вашу машину. Зато в микроавтобусе все будут чувствовать себя комфортно, и дорога от аэропорта не покажется утомительно длинной.</li>
+					<li>Как на зло, ваша машина стоит на ремонте, а отвезти тещу за город нужно прямо сейчас. Приезжайте к нам (недалеко от метро Пушкинская), выбирайте машину, проходите процедуру оформления (не более 15 минут при наличии всех документов) – и вот вы уже готовы загрузить все сумки и баулы, а теща всю дорогу гадает, когда вы успели купить новый автомобиль.</li>
+					<li>Вас попросили сопровождать деловых партнеров фирмы в передвижениях по городу. Возможно, ваша машина соответствует деловому стандарту и вместит всех гостей фирмы. Если же нет, обращайтесь к нам. Мы осуществляем прокат авто в Минске, как с водителем, так и без. Кортеж из пары машин бизнес-класса произведет нужное впечатление и упростит экскурсии по городу.</li>
+					<li>Во многих житейских ситуациях аренда авто – это разумный и экономный выход. Ухоженный автомобиль со страховкой выручает в непредвиденных обстоятельствах, упрощает передвижение по городу, дает возможность продемонстрировать более высокий статус. Что может быть эффектнее, чем выезд на корпоративный пикник на шикарном BMW.</li>
+				</ul>
+				<h2>Прокат автомобилей без водителя: просто, быстро, экономно.</h2>
+				<ul>
+					<li>«Пчёлка Майя» предлагает большой выбор автомобилей: эконом и средний класс, бизнес-класс и внедорожники, в нашем автопарке содержатся исключительно иномарки от мировых производителей: Toyota, Mazda, Honda, Lexus, Chrysler, Fiat, Mercedes, Volkswagen, Peugeot, Citroen, Hyundai, BMW, Pontiac, Hummer, Dodge, Chevrolet. Все машины застрахованы по полису КАСКО и своевременно проходят техобслуживание.</li>
+					<li>При наличии паспорта, водительского удостоверения категории «В» и талона к нему оформление аренды авто занимает не более 15 минут.</li>
+					<li>Офис компании находится г. Минска, ул. Берута 3Б, офис 39Б (4-й этаж), недалеко от ст. метро «Пушкинская», однако за дополнительную плату (от 10 у.е.) автомобиль может быть доставлен в удобное для вас место, например, в аэропорт или на вокзал к прибытию вашего рейса. Если вы арендуете авто на длительное время, доставка будет осуществлена бесплатно.</li>
+					<li>Прокат автомобилей в Минске без водителя и прокат микроавтобуса без водителя стоит в среднем от 35 у.е.*, однако постоянные клиенты фирмы могут рассчитывать на скидки (5-10% от стоимости).</li>
+				</ul>
+				<p>Вы можете арендовать и автомобиль с водителем, с почасовой оплатой.</p>
+				<h2>Аренда автомобилей: куда позвонить?</h2>
+				<ul>
+					<li>Чтобы арендовать автомобиль в нашей компании, начните с простого: выберите подходящую машину в нашем автопарке. Эконом или бизнес-класс, а может быть, внедорожник? Выбор широк.</li>
+					<li>Затем нужно позвонить по телефонам, указанным в шапке сайта, или заполнить форму заказа. Наш менеджер ответит на все интересующие вас вопросы и даст рекомендации по выбору авто.</li>
+					<li>Возьмите с собой паспорт, водительское удостоверение категории «В» и талон к нему.</li>
+					<li>Приготовьте залог (от 50 до 300 у.е. в зависимости от марки автомобиля).</li>
+					<li>Приезжайте за машиной или закажите его доставку. Если вы арендуете машину надолго, автомобиль будет доставлен бесплатно.</li>
+					<li>Все автомобили в нашем парке оснащаются навигатором (за подробностями обращайтесь к оператору).</li>
+				</ul>
+				<p>Как видите, аренда авто в Минске – это не только просто, это удобно и экономно. Став нашим постоянным клиентом, вы получаете в свое распоряжение целый парк автомобилей на все случаи жизни, без финансового бремени по покупке и уходу за ними. Мы ухаживаем за автомобилями, вы – ездите на них.</p>
+				<p>*цены указаны в долларах США для удобства иностранных граждан, расчёт осуществляется в белорусских рублях.</p>
+			</div>
+		</main>
+		<aside class="aside">
+			<section class="menuleft">
+				<h2 class="menuleft_title">Прокат автомобилей</h2>
+				<ul class="menuleft_list">
+					<li class="menuleft_item">
+						<a href="catalog.html" class="menuleft_link">Эконом класс</a>
+					</li>
+					<li class="menuleft_item">
+						<a href="catalog.html" class="menuleft_link">Средний класс</a>
+					</li>
+					<li class="menuleft_item">
+						<a href="catalog.html" class="menuleft_link">Бизнес класс</a>
+					</li>
+					<li class="menuleft_item">
+						<a href="catalog.html" class="menuleft_link">Кабриолеты и купе</a>
+					</li>
+					<li class="menuleft_item">
+						<a href="catalog.html" class="menuleft_link">Джипы и внедорожники</a>
+					</li>
+					<li class="menuleft_item">
+						<a href="catalog.html" class="menuleft_link">Минивены и микроавтобусы</a>
+					</li>
+					<li class="menuleft_item">
+						<a href="catalog.html" class="menuleft_link">Грузовые авто</a>
+					</li>
+					<li class="menuleft_item">
+						<a href="catalog.html" class="menuleft_link">Аренда автомобиля с водителем</a>
+					</li>
+					<li class="menuleft_item">
+						<a href="catalog.html" class="menuleft_link">Долгосрочная аренда</a>
+					</li>			
+					<li class="menuleft_item">
+						<a href="catalog.html" class="menuleft_link">Авто с правом выезда за границу</a>
+					</li>
+				</ul>
+			</section>
+			<section class="news-block">
+				<h2 class="news-block_title">Новости</h2>
+				<div class="news-block_body">
+					<a href="news-detail.html" class="news-block_item">
+						<span class="news-block_image">
+							<img src="images/content/news-preview.jpg" alt="">
+							<span class="news-block_date">01/12/2017</span>
+						</span>
+						<span class="news-block_name">Мы переехали в новый офис</span>
+					</a>
+					<a href="news-detail.html" class="news-block_item">
+						<span class="news-block_image">
+							<img src="images/content/news-preview.jpg" alt="">
+							<span class="news-block_date">01/12/2017</span>
+						</span>
+						<span class="news-block_name">Мы переехали в новый офис</span>
+					</a>
+					<a href="news-detail.html" class="news-block_item">
+						<span class="news-block_image">
+							<img src="images/content/news-preview.jpg" alt="">
+							<span class="news-block_date">01/12/2017</span>
+						</span>
+						<span class="news-block_name">Мы переехали в новый офис</span>
+					</a>
+					<a href="news.html" class="news-block_more">Все новости...</a>
+				</div>
+			</section>
+		</aside>
+	</div>
+	<footer class="footer">
+		<div class="sitewrap">
+			<div class="footer_item">
+				<ul class="menubottom">
+					<li class="menubottom_item">
+						<a href="/" class="menubottom_link">Главная</a>
+					</li>
+					<li class="menubottom_item">
+						<a href="news.html" class="menubottom_link">Новости</a>
+					</li>
+					<li class="menubottom_item">
+						<a href="article.html" class="menubottom_link">Условия аренды</a>
+					</li>
+					<li class="menubottom_item">
+						<a href="price.html" class="menubottom_link">Прайс-лист</a>
+					</li>
+					<li class="menubottom_item">
+						<a href="contacts.html" class="menubottom_link">Контакты</a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer_item">
+				<ul class="avtoclass-bottom">
+					<li class="avtoclass-bottoms_item">
+						<a href="catalog.html" class="avtoclass-bottom_link">Эконом класс</a>
+					</li>
+					<li class="avtoclass-bottom_item">
+						<a href="catalog.html" class="avtoclass-bottom_link">Средний класс</a>
+					</li>
+					<li class="avtoclass-bottom_item">
+						<a href="catalog.html" class="avtoclass-bottom_link">Бизнес класс</a>
+					</li>
+					<li class="avtoclass-bottom_item">
+						<a href="catalog.html" class="avtoclass-bottom_link">Микроавтобусы</a>
+					</li>
+					<li class="avtoclass-bottom_item">
+						<a href="catalog.html" class="avtoclass-bottom_link">Внедорожники</a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer_item">
+				<a href="/" class="logo-footer">ProkatAvto</a>
+				<div class="phones-footer">
+					<p>8 (029) 636 17 23</p>
+					<p>8 (017) 306 48 98</p>
+				</div>
+				<div class="mail-footer">
+					<p><a href="mailto:info@aznur.by">info@aznur.by</a></p>
+				</div>
+				<div class="social">
+					<ul class="social_list">
+						<li class="social_item">
+							<a href="#" class="social_link social_link__vk">Вконтакте</a>
+						</li>
+						<li class="social_item">
+							<a href="#" class="social_link social_link__fb">Facebook</a>
+						</li>
+						<li class="social_item">
+							<a href="#" class="social_link social_link__ok">Одноклассники</a>
+						</li>
+						<li class="social_item">
+							<a href="#" class="social_link social_link__tt">Twitter</a>
+						</li>
+						<li class="social_item">
+							<a href="#" class="social_link social_link__gg">Google+</a>
+						</li>
+						<li class="social_item">
+							<a href="#" class="social_link social_link__ig">Instagram</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer_bottom">
+			<div class="sitewrap">
+				<a href="https://webformat.by/" class="wfs">Создание и продвижение сайтов</a>
+			</div>
+		</div>
+	</footer>
 	<script src="js/jquery-1.12.4.min.js"></script>
 	<script src="http://maps.googleapis.com/maps/api/js?v=3.exp"></script>
 	<script src="js/main.js"></script>
