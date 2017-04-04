@@ -1,0 +1,14 @@
+.menubottom{
+	padding: 65px 0 66px 68px;
+	&_item{
+		font-size: 20px;
+		color: #fefdfd;
+		text-transform: uppercase;
+		line-height: 54px;
+	}
+	&_link{
+		@include link(#fefdfd, $green);
+		text-decoration: none;
+		transition: color .2s;
+	}
+}

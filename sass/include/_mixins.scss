@@ -5,7 +5,7 @@
 }
 //*********************************************************************************/
 @mixin break1 {
-  @media all and (max-width: 1190px) { @content; }
+  @media all and (max-width: 960px) { @content; }
 }
 @mixin break2 {
   @media all and (max-width: 1024px) { @content; }
@@ -64,7 +64,19 @@
     *zoom: 1;
   }
 }
-
+@mixin clearfix2{
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  } 
+  &:after {
+    clear: both;
+  }
+  @include old-ie{
+    zoom: 1;
+  }
+}
 //*********************************************************************************/
 @mixin before{
   @include old-ie{

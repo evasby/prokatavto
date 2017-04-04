@@ -1,3 +1,23 @@
 .header{
-
+	background-color: #fff;
+	padding: 29px 0 0 0;
+	&_top{
+		@include clearfix;
+	}
+	&_left{
+		float: left;
+		width: 30%;
+	}
+	&_right{
+		float: right;
+		width: 70%;
+		max-width: 677px;
+	}
+	&_bottom{
+		.front &{
+			@include clearfix;
+			height: 516px;
+			background: transparent url('../images/header-front.jpg') left 65px no-repeat;
+		}
+	}
 }

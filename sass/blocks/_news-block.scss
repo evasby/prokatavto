@@ -1,0 +1,67 @@
+.news-block{
+	&_title{
+		padding: 29px 0 26px;
+		margin: 0 0 4px;
+		background-color: $green;
+		font-size: 19px;
+		text-transform: uppercase;
+		text-align: center;
+		color: #fff;
+	}
+	&_body{
+		background-color: $brown;
+		padding: 0 17px 25px 17px;
+	}
+	&_item{
+		display: block;
+		padding: 17px 23px 15px;
+		@include link(#fff, $green);
+		transition: color 0.2s;
+		text-decoration: none;
+		border-top: 1px solid #727374;
+		&:first-child{
+			border: none;
+		}
+	}
+	&_image{
+		display: block;
+		position: relative;
+		margin: 0 0 15px;
+		img{
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+	}
+	&_date{
+		position: absolute;
+		padding: 3px 7px;
+		left: 0;
+		bottom: 0;
+		background-color: $green;
+		font-size: 11px;
+		color: #fff;
+	}
+	&_name{
+		font-size: 17px;
+		display: inline;
+		position: relative;
+		transition: box-shadow 0.2s;
+		.news-block_item:hover &{
+			box-shadow: inset 0 -1px 0 0 $green;
+		}
+	}
+	&_bottom{
+		text-align: right;
+		padding: 23px 0 0;
+	}
+	&_more{
+		font-size: 12px;
+		@include link(#fff, #fff);
+		text-decoration: none;
+		transition: box-shadow 0.2s;
+		&:hover{
+			box-shadow: inset 0 -1px 0 0 #fff;
+		}
+	}
+}

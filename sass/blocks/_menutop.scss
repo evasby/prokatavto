@@ -1,0 +1,31 @@
+.menutop{
+	background-color: $grey;
+	&_list{
+		display: table;
+		width: 100%;
+		height: 38px;
+	}
+	&_item{
+		display: table-cell;
+		vertical-align: middle;
+		text-align: center;
+		font-size: 15px;
+		text-transform: uppercase;
+		color: #272627;
+		transition: background-color 0.2s,
+								color 0.2s;		
+		&__active,
+		&:hover{
+			color: #fefefe;
+			background-color: $green;
+		}
+	}
+	&_link{
+		text-decoration: none;
+		display: block;
+		line-height: 38px;
+		height: 100%;
+		@include link(#272627, #fefefe);
+		transition: color 0.2s;		
+	}
+}

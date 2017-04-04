@@ -1,0 +1,15 @@
+.main{
+	margin-left: 342px;
+	background-color: #fdfeff;
+	&_title{
+		padding: 26px 0 10px 22px;
+		border-bottom: 3px solid $green;
+		color: $brown;
+		font-size: 22px;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+	&_body{
+		padding: 0 22px 73px;
+	}
+}
