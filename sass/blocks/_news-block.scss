@@ -1,6 +1,9 @@
 .news-block{
+	@include break1{
+		display: none;
+	}
 	&_title{
-		padding: 29px 0 26px;
+		padding: 26px 0 28px;
 		margin: 0 0 4px;
 		background-color: $green;
 		font-size: 19px;
@@ -10,11 +13,11 @@
 	}
 	&_body{
 		background-color: $brown;
-		padding: 0 17px 25px 17px;
+		padding: 0 17px 22px 17px;
 	}
 	&_item{
 		display: block;
-		padding: 17px 23px 15px;
+		padding: 17px 20px 12px;
 		@include link(#fff, $green);
 		transition: color 0.2s;
 		text-decoration: none;
@@ -26,7 +29,7 @@
 	&_image{
 		display: block;
 		position: relative;
-		margin: 0 0 15px;
+		margin: 0 0 13px;
 		img{
 			display: block;
 			width: 100%;
@@ -35,7 +38,7 @@
 	}
 	&_date{
 		position: absolute;
-		padding: 3px 7px;
+		padding: 0px 7px 1px;
 		left: 0;
 		bottom: 0;
 		background-color: $green;
@@ -44,6 +47,7 @@
 	}
 	&_name{
 		font-size: 17px;
+		line-height: 18px;
 		display: inline;
 		position: relative;
 		transition: box-shadow 0.2s;
@@ -53,7 +57,7 @@
 	}
 	&_bottom{
 		text-align: right;
-		padding: 23px 0 0;
+		padding: 25px 0 0;
 	}
 	&_more{
 		font-size: 12px;

@@ -1,4 +1,7 @@
 .menubottom{
+	@include break1{
+		display: none;
+	}
 	padding: 65px 0 66px 68px;
 	&_item{
 		font-size: 20px;

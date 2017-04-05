@@ -1,5 +1,8 @@
 .avtoclass-bottom{
-	padding: 65px 0 0 59px;
+	@include break1{
+		display: none;
+	}
+	padding: 65px 0 0 36px;
 	&_item{
 		font-size: 20px;
 		color: #fefdfd;

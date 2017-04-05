@@ -18,9 +18,16 @@
 	&_item{
 		float: left;
 		width: 25%;
+		@include break1{
+			float: none;
+			width: auto;
+		}
 		&__right{
 			width: 50%;
 			@include clearfix;
+			@include break1{
+				width: auto;
+			}
 		}
 	}
 }

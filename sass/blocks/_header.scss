@@ -6,18 +6,32 @@
 	}
 	&_left{
 		float: left;
-		width: 30%;
+		width: 35%;
+		@include break1{
+			float: none;
+			width: auto;
+		}
 	}
 	&_right{
 		float: right;
-		width: 70%;
+		width: 65%;
 		max-width: 677px;
+		@include break1{
+			float: none;
+			width: auto;
+			max-width: none;
+		}
 	}
 	&_bottom{
+		@include break1{
+			display: none;
+		}
+		height: 329px;
+		background: transparent url('../images/header.jpg') 50% 50% no-repeat;
 		.front &{
 			@include clearfix;
 			height: 516px;
-			background: transparent url('../images/header-front.jpg') left 65px no-repeat;
+			background: transparent url('../images/header-front.jpg') 3px 64px no-repeat;
 		}
 	}
 }

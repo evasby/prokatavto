@@ -1,18 +1,38 @@
 .menuleft{
-	margin: 0 0 100px;
+	margin: 0 0 102px;
+	@include break1{
+		background-color: $grey;
+		position: fixed;
+		z-index: 2;
+		top: 0;
+		right: -58%;
+		height: 100%;
+		width: 58%;
+		transition: transform .2s;
+		&__on{
+			transform: translateX(-100%);
+		}
+	}
 	&_title{
-		padding: 29px 0 26px;
+		padding: 28px 0 26px;
 		margin: 0 0 4px;
 		background-color: $green;
 		font-size: 19px;
 		text-transform: uppercase;
 		text-align: center;
 		color: #fff;
+		@include break1{
+			display: none;
+		}
 	}
 	&_list{
 		padding: 16px 0;
 		background-color: $brown;
 		position: relative;
+		@include break1{
+			background-color: transparent;
+			padding: 40px 0 0;
+		}
 		&:before{
 			content: '';
 			width: 5px;
@@ -21,11 +41,19 @@
 			top: 34px;
 			bottom: 34px;
 			background-color: #fff;
+			@include break1{
+				width: 100%;
+				height: 32px;
+				background-color: $green;
+				top: 0;
+				left: 0;
+				bottom: auto
+			}
 		}
 	}
 	&_item{
 		font-size: 17px;
-		line-height: 20px;
+		line-height: 23px;
 		color: #fff;
 		text-transform: uppercase;
 		position: relative;
@@ -37,6 +65,9 @@
 			left: 22px;
 			top: 18px;
 			background-color: #fff;
+			@include break1{
+				display: none;
+			}
 		}
 		&:last-child{
 			&:after{
@@ -47,12 +78,19 @@
 				top: 23px;
 				left: 22px;
 				background-color: $brown;
+				@include break1{
+					display: none;
+				}
 			}
+		}
+		@include break1{
+			font-size: 15px;
+			line-height: 32px;
 		}
 	}
 	&_link{
 		display: block;
-		padding: 9px 0 9px 59px;
+		padding: 8px 0 10px 59px;
 		@include link(#fff, #fff);
 		text-decoration: none;
 		position: relative;
@@ -68,15 +106,30 @@
 			background-color: $green;
 			opacity: 0;
 			transform-origin: 0 0;
-			transition: opacity 0.2s ease-out .2s,
+			transition: opacity .2s ease-out .2s,
 									transform .2s ease-out .1s;
+			@include break1{
+				transition: opacity .2s;
+			}
 		}
-		&:hover{
+		&:hover,
+		&__active{
 			&:before{
 				opacity: 1;
 				transform: scaleX(1.072);
 				transition: opacity 0.2s,
 										transform .2s ease-out .1s;
+				@include break1{
+					transition: opacity .2s;
+				}
+			}
+		}
+		@include break1{
+			padding: 0 0 0 30px;
+			@include link(#272627, #fefefe);
+			transition: color .2s;
+			&__active{
+				@include link(#fefefe, #fefefe);
 			}
 		}
 	}

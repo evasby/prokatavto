@@ -7,8 +7,10 @@
 body{
 	font-family: $f;
   line-height: $lh;
-	//min-width: 1170px;
+  font-size: $fs;
+	min-width: 300px;
   background-color: #f6f6f6;
+  position: relative;
 }
 a{
   

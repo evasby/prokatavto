@@ -2,5 +2,72 @@
 	display: none;
 	@include break1{
 		display: block;
+		position: fixed;
+		z-index: 3;
+		top: 0;
+		left: 0;
+		//width: 125px;
+		//text-align: center;
+		cursor: pointer;
+		background-color: $green;
+		color: #fff;
+		text-transform: uppercase;
+		padding: 5px 40px 8px 5px;
+		&__right{
+			left: auto;
+			right: 0;
+			padding: 5px 5px 8px 40px;
+		}
+		&_switch{
+			position: absolute;
+			top: 4px;
+			right: 4px;
+			height: 23px;
+			width: 23px;
+			padding: 10px 0 0;
+			.menu-toggle__right &{
+				right: auto;
+				left: 4px;
+			}
+		}
+		&_lines{
+			display: block;
+	    width: 23px;
+	    height: 3px;
+	    position: relative;
+	    background-color: #fff;
+	    .menu-toggle__on &{
+	    	background-color: transparent;
+	    	@include old-ie{
+					background-color: #fff;
+	    	}
+	    }
+	    &:before{
+		    content: "";
+		    height: 3px;
+		    width: 100%;
+		    position: absolute;
+		    top: -7px;
+		    left: 0;
+		    background-color: #fff;
+		    transition: transform .3s;
+		    .menu-toggle__on &{
+		    	transform: translate(0, 7px) rotate(45deg);
+		    }
+		  }
+		  &:after{
+		    content: "";
+		    height: 3px;
+		    width: 100%;
+		    position: absolute;
+		    top: 7px;
+		    left: 0;
+		    background-color: #fff;
+		    transition: transform .3s;
+		    .menu-toggle__on &{
+		    	transform: translate(0, -7px) rotate(-45deg);
+		    }
+		  }
+		}
 	}
 }

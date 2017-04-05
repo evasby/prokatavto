@@ -1,15 +1,31 @@
 .main{
 	margin-left: 342px;
 	background-color: #fdfeff;
+	.news &{
+		background-color: transparent;
+	}
+	@include break1{
+		margin: 0;
+	}
 	&_title{
-		padding: 26px 0 10px 22px;
+		padding: 24px 0 13px 22px;
 		border-bottom: 3px solid $green;
 		color: $brown;
 		font-size: 22px;
 		font-weight: bold;
 		text-transform: uppercase;
+		.front &{
+			padding: 27px 0 13px 22px;
+		}
+		@include break1{
+			padding: 27px 0 13px;
+			text-align: center;
+		}
+	}
+	&_header{
+		padding: 0 0 22px;
 	}
 	&_body{
-		padding: 0 22px 73px;
+		padding: 0 22px 60px;
 	}
 }

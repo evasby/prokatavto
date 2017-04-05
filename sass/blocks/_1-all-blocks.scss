@@ -12,7 +12,11 @@
 @import "menuleft";
 @import "news-block";
 
+@import "news";
+
+@import "bredcrumbs";
 @import "catalog";
+@import "filter";
 @import "user-content";
 
 @import "footer";
@@ -24,3 +28,4 @@
 @import "menubottom";
 @import "avtoclass-bottom";
 @import "wfs";
+@import "overlay";

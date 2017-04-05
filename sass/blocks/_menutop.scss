@@ -1,9 +1,36 @@
 .menutop{
 	background-color: $grey;
+	@include break1{
+		position: fixed;
+		z-index: 2;
+		top: 0;
+		left: -58%;
+		height: 100%;
+		width: 58%;
+		transition: transform .2s;
+		&__on{
+			transform: translateX(100%);
+		}
+	}
 	&_list{
 		display: table;
 		width: 100%;
 		height: 38px;
+		@include break1{
+			display: block;
+			height: auto;
+			padding: 40px 0 0;
+			position: relative;
+			&:before{
+				content: '';
+				position: absolute;
+				width: 100%;
+				height: 32px;
+				top: 0;
+				left: 0;
+				background-color: $green;
+			}
+		}
 	}
 	&_item{
 		display: table-cell;
@@ -19,6 +46,10 @@
 			color: #fefefe;
 			background-color: $green;
 		}
+		@include break1{
+			display: block;
+			text-align: right;
+		}
 	}
 	&_link{
 		text-decoration: none;
@@ -26,6 +57,13 @@
 		line-height: 38px;
 		height: 100%;
 		@include link(#272627, #fefefe);
-		transition: color 0.2s;		
+		transition: color 0.2s;
+		@include break1{
+			padding: 0 30px 0 0;
+			line-height: 32px;
+		}
+		&__active{
+			@include link(#fefefe, #fefefe);
+		}
 	}
 }

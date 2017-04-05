@@ -1,4 +1,10 @@
 .info-footer{
 	float: right;
-	padding: 0 60px 66px 0;
+	padding: 0 67px 66px 0;
+	@include break1{
+		float: none;
+		max-width: 270px;
+		margin: 0 auto;
+		padding: 0 0 66px;
+	}
 }

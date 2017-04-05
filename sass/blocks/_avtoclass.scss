@@ -1,17 +1,17 @@
 .avtoclass{
 	float: right;
-	padding: 113px 0 0;
+	padding: 110px 0 0;
 	&_title{
 		display: block;
-		margin: 0 0 9px;
+		margin: 0 0 7px;
 		text-align: center;
 		font-size: 12px;
 		text-transform: uppercase;
 	}
 	&_item{
-		width: 241px;
-		height: 40px;
-		margin: 0 0 2px;
+		width: 239px;
+		height: 39px;
+		margin: 0 0 4px;
 		background-color: $brown;
 	}
 	&_link{

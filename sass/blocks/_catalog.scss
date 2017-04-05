@@ -10,10 +10,21 @@
 	&_item{
 		float: left;
 		width: 27.02%;
-		margin: 0 0 59px 9.47%;
+		margin: 0 0 63px 9.47%;
+		background-color: $brown;
 		text-decoration: none;
 		&:nth-child(3n-2){
 			margin-left: 0;
+		}
+		@include break2{
+			float: none;
+			display: block;
+			width: auto;
+			max-width: 400px;
+			margin: 0 auto 30px;
+			&:nth-child(3n-2){
+				margin: 0 auto 30px;
+			}
 		}
 	}
 	&_image{
@@ -27,7 +38,6 @@
 	&_name{
 		display: table;
 		width: 100%;
-		background-color: $brown;
 		font-size: 15px;
 		line-height: 1;
 		color: #fffefe;
@@ -43,6 +53,7 @@
 	&_bottom{
 		display: block;
 		@include clearfix;
+		background-color: #fdfeff;
 	}
 	&_price{
 		float: right;
