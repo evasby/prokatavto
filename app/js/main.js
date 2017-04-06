@@ -35,4 +35,35 @@ $(document).ready(function(){
     $(".menuleft").removeClass('menuleft__on');
   });
 
+  //bxslider
+  $('.mybxpager_pager').bxSlider({
+    pager: false,
+    maxSlides: 3,
+    minSlides: 3,
+    slideWidth: 197,
+    slideMargin: 42,
+    infiniteLoop: false,
+    hideControlOnEnd: true,
+    onSliderLoad: function(){
+      $('.mybxslider_list').bxSlider({
+        pagerCustom: '#bx-pager'
+      });
+    }
+  });
+
+  //colorbox
+  $('a.mybxslider_link').colorbox({
+    rel: 'gal',
+    maxWidth:'95%',
+    maxHeight:'95%',
+    scrolling: false,
+    className: 'mybxslider-colorbox'
+    /*onComplete: function(){
+      $('#cboxClose').show();
+    },
+    onClosed: function(){
+      $('#cboxClose').hide();
+    }*/
+  });
+
 });

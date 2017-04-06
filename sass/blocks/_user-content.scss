@@ -1,4 +1,8 @@
 .user-content{
+	padding: 8px 28px 33px 22px;
+	.front &{
+		padding: 0 28px 0 22px;
+	}
 	.front &{
 		margin: -6px 0 0;
 	}
@@ -13,20 +17,49 @@
 		font-weight: bold;
 	}
 	ul{
-
+		margin: 0 0 19px;
 	}
 	li{
-		margin: 0 0 19px;
-		padding: 0 0 0 36px;
+		padding: 0 0 0 20px;
 		position: relative;
 		&:before{
 			content: '';
 			position: absolute;
 			top: 7px;
-			left: 11px;
+			left: 4px;
 			width: 8px;
 			height: 8px;
 			background-color: $green;
+			.front &{
+				left: 11px;
+			}
+		}
+		.front &{
+			margin: 0 0 19px;
+			padding: 0 0 0 36px;
+		}
+	}
+	&__description{
+		color: $brown;
+		p{
+			font-size: 17px;
+			line-height: 28px;
+		}
+		li{
+			font-size: 17px;
+			line-height: 28px;
+			margin: 0 0 19px;
+			&:before{
+				top: 11px;
+			}
+		}
+		h2,
+		h3,
+		h4,
+		h5{
+			font-size: 18px;
+			margin: 0 0 19px;
+			font-weight: bold;
 		}
 	}
 }

@@ -1,0 +1,51 @@
+.techinfo{
+	color: $brown;
+	font-size: 19px;
+	padding: 10px 0;
+	&_title{
+		float: left;
+		width: 50%;
+		font-weight: bold;
+		padding: 0 0 0 35px;
+		@include break3{
+			width: 50%;
+			padding: 0 0 0 15px;
+			font-size: 15px;
+		}
+		.detail_right &{
+			width: 60%;
+			padding: 0 0 0 21px;
+			@include break3{
+				width: 50%;
+				padding: 0 0 0 15px;
+			}
+		}
+	}
+	&_value{
+		float: left;
+		width: 50%;
+		padding: 0 0 0 26px;
+		@include break3{
+			width: 50%;
+			padding: 0 0 0 15px;
+			font-size: 15px;
+		}
+		.detail_right &{
+			width: 40%;
+			padding: 0 0 0 14px;
+			@include break3{
+				width: 50%;
+				padding: 0 0 0 15px;
+			}
+		}
+	}
+	&_item{
+		@include clearfix;
+		padding: 8px 0;
+		overflow: hidden;
+		border-top: 2px solid #fff;
+		&:first-child{
+			border: none;
+		}
+	}
+}

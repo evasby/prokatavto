@@ -1,6 +1,7 @@
 .aside{
 	width: 303px;
 	float: left;
+	margin: 0 0 128px;
 	@include break1{
 		width: auto;
 	}

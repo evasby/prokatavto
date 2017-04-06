@@ -1,5 +1,8 @@
 .filter{
-	height: 115px;
+	height: 93px;
+	.front &{
+		height: 115px;
+	}
 	*{
 		display: none;
 	}

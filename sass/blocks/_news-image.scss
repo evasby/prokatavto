@@ -1,0 +1,20 @@
+.news-image{
+	float: left;
+	max-width: 231px;
+	position: relative;
+	margin: 0 30px 17px 0;
+	img{
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+	&_date{
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		color: #fff;
+		background-color: $green;
+		padding: 0px 7px 1px;
+		font-size: 11px;
+	}
+}

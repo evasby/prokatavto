@@ -1,4 +1,8 @@
 .catalog{
+	padding: 0 22px 27px 22px;
+	.front &{
+		padding: 0 22px;
+	}
 	&_wrap{
 		//@include clearfix;
 		//overflow: hidden;

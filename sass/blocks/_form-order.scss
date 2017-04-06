@@ -1,0 +1,125 @@
+.form-order{
+	background-color: #595959;
+	padding: 37px 20px 27px;
+	margin: 0 0 51px;
+	&_title{
+		margin: 0 0 17px;
+		font-size: 29px;
+		line-height: 1;
+		font-weight: bold;
+		color: $green;
+		text-transform: uppercase;
+		position: relative;
+		z-index: 1;
+		text-align: center;
+		&:before{
+			content: '';
+			position: absolute;
+			z-index: -1;
+			width: 100%;
+			height: 3px;
+			left: 0;
+			top: 50%;
+			margin-top: -2px;
+			background-color: $green;
+		}
+		@include break3{
+			font-size: 19px;
+		}
+	}
+	&_cover{
+		display: inline-block;
+		padding: 0 30px;
+		background-color: #595959;
+		@include break3{
+			padding: 0 15px;
+		}
+	}
+	p{
+		color: #fff;
+		text-align: center;
+		margin: 0 0 19px;
+	}
+	&_wrap{
+		padding: 17px 25px 32px;
+		@include clearfix;
+		overflow: hidden;
+		@include break3{
+			padding: 17px 0 35px;
+		}
+	}
+	&_left{
+		float: left;
+		width: 50%;
+		padding: 0 30px 0 0;
+		@include break3{
+			float: none;
+			width: auto;
+			padding: 0;
+		}
+	}
+	&_right{
+		float: left;
+		width: 50%;
+		padding: 0 0 0 30px;
+		@include break3{
+			float: none;
+			width: auto;
+			padding: 0;
+		}
+	}
+	input[type="text"],
+	input[type="email"]{
+		display: block;
+		width: 100%;
+		height: 31px;
+		padding: 0 5px 0 25px;
+		margin: 0 0 16px;
+		border: 0;
+		font-size: 17px;
+		line-height: 31px;
+	}
+	&_group{
+		@include clearfix;
+		overflow: hidden;
+		input[type="text"],
+		input[type="email"]{
+			float: right;
+			width: 46.77%;
+			margin: 0 0 16px 6.46%;
+			&:first-child{
+				float: left;
+				margin: 0 0 14px;
+				@include break3{
+					float: none;
+				}
+			}
+			@include break3{
+				float: none;
+				width: 100%;
+				margin: 0 0 16px;
+			}
+		}
+	}
+	input[type="submit"]{
+		display: block;
+		background-color: $green;
+		box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.4);
+		width: 193px;
+		height: 42px;
+		margin: 0 auto;
+		line-height: 42px;
+		font-size: 17px;
+		font-weight: bold;
+		text-transform: uppercase;
+		border: 0;
+		color: #fff;
+		text-decoration: none;
+		text-align: center;
+		cursor: pointer;
+		transition: background-color .2s;
+		&:hover{
+			background-color: $brown;
+		}
+	}
+}

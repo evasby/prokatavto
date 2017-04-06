@@ -1,14 +1,22 @@
 .main{
-	margin-left: 342px;
+	margin: 0 0 73px 342px;
 	background-color: #fdfeff;
+	box-shadow: 1px 3px 5px 0px rgba(0,0,0,0.27);
+	.front &{
+		margin: 0 0 0 342px;
+	}
 	.news &{
 		background-color: transparent;
+		box-shadow: none;
+	}
+	.front &{
+		box-shadow: none;
 	}
 	@include break1{
 		margin: 0;
 	}
 	&_title{
-		padding: 24px 0 13px 22px;
+		padding: 24px 0 12px 22px;
 		border-bottom: 3px solid $green;
 		color: $brown;
 		font-size: 22px;
@@ -26,6 +34,13 @@
 		padding: 0 0 22px;
 	}
 	&_body{
-		padding: 0 22px 60px;
+		//padding: 8px 28px 33px 22px;
+		.news &{
+			padding: 0 0 33px;
+		}
+		.front &{
+			//padding: 0 22px 33px;
+			padding: 0 0 33px;
+		}
 	}
 }
