@@ -4,6 +4,9 @@
 	box-shadow: 1px 3px 5px 0px rgba(0,0,0,0.27);
 	.front &{
 		margin: 0 0 0 342px;
+		@include break1{
+			margin: 0;
+		}
 	}
 	.news &{
 		background-color: transparent;

@@ -30,6 +30,15 @@
 		background-size: 100% 100%;
 	}
 	@include break1{
+		display: block;
+		font-family: verdana;
+		height: 40px;
+		line-height: 40px;
 		margin: 10px 0 0;
+		padding: 1px 0 0;
+		text-align: center;
+		&:before{
+			display: none;
+		}
 	}
 }

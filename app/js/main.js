@@ -75,13 +75,13 @@ $(document).ready(function(){
     className: 'popup-colorbox',
     inline: true,
     href: '#form-popup',
-    opacity: 0.7
-    /*onComplete: function(){
+    opacity: 0.8,
+    onComplete: function(){
       $('#cboxClose').show();
     },
     onClosed: function(){
       $('#cboxClose').hide();
-    }*/
+    }
   });
 
   //price

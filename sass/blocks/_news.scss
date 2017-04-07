@@ -28,6 +28,11 @@
 		float: left;
 		width: 230px;
 		position: relative;
+		@include break3{
+			display: block;
+			float: none;
+			margin: 0 0 0 5px;
+		}
 		img{
 			display: block;
 			width: 100%;
@@ -52,6 +57,9 @@
 	&_text{
 		margin-left: 257px;
 		padding: 6px 5px 0;
+		@include break3{
+			margin: 0;
+		}
 		p{
 			margin: 0 0 19px;
 		}

@@ -4,6 +4,9 @@
 .hide{
 	display: none;
 }
+html{
+  text-size-adjust: none;
+}
 body{
 	font-family: $f;
   line-height: $lh;
