@@ -51,7 +51,7 @@ $(document).ready(function(){
     }
   });
 
-  //colorbox
+  //colorbox in slider
   $('a.mybxslider_link').colorbox({
     rel: 'gal',
     maxWidth:'95%',
@@ -64,6 +64,33 @@ $(document).ready(function(){
     onClosed: function(){
       $('#cboxClose').hide();
     }*/
+  });
+
+  //colorbox popup form
+  $('a.callback').colorbox({
+    width: '100%',
+    maxWidth: '437px',
+    //maxHeight:'95%',
+    scrolling: false,
+    className: 'popup-colorbox',
+    inline: true,
+    href: '#form-popup',
+    opacity: 0.7
+    /*onComplete: function(){
+      $('#cboxClose').show();
+    },
+    onClosed: function(){
+      $('#cboxClose').hide();
+    }*/
+  });
+
+  //price
+  $('.price_item').click(function(e) {
+      $('.price_body:visible').slideUp("normal");
+      $('.price_item').removeClass('price_item__on');
+      if (!$(this).find('.price_body').is(':visible')) {
+        $(this).addClass('price_item__on').find('.price_body').slideDown('normal');
+      }
   });
 
 });

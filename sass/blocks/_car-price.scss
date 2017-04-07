@@ -1,0 +1,44 @@
+.car-price{
+	overflow: auto;
+	table{
+		width: 100%;
+		font-size: 14px;
+		color: $brown;
+	}
+	tr{
+		border-bottom: 2px solid #fff;
+		&:first-child{
+			border: none;
+		}
+		&:last-child{
+			border: none;
+		}
+	}
+	th{
+		background-color: #c8c8c8;
+		padding: 4px 12px;
+		text-align: center;
+		border-left: 2px solid #fff;
+		box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.3);
+		&:first-child{
+			text-align: left;
+			border: none;
+		}
+	}
+	td{
+		padding: 10px 12px;
+		text-align: center;
+		font-size: 16px;
+		color: #ff0000;
+		border-left: 2px solid #fff;
+		&:first-child{
+			text-align: left;
+			font-size: 14px;
+			color: $brown;
+			border: none;
+		}
+		a{
+			@include link($brown, $brown);
+		}
+	}
+}
