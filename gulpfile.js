@@ -49,7 +49,7 @@ gulp.task('css', function () {
     }))
     .pipe(gulp.dest('css'))
     .pipe(gulp.dest('app/css'))
-    .pipe(gulp.dest('c:/OS2/OpenServer/domains/swimming/sites/all/themes/swimming/css'))
+    .pipe(gulp.dest('c:/OS2/OpenServer/domains/prokatavto/sites/all/themes/prokatavto/css'))
     .pipe(connect.reload())
     .pipe(notify('CSS - Done!'));
 });

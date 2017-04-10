@@ -55,6 +55,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .popup_submit {
   position: relative; }
 
+.tabs {
+  padding: 0 0 10px; }
+
 .ajax-progress {
   position: absolute;
   z-index: 1;
@@ -541,7 +544,7 @@ pre {
     @media all and (max-width: 1170px) {
       .front .main {
         margin: 0; } }
-  .news .main {
+  .page-news .main {
     background-color: transparent;
     -webkit-box-shadow: none;
     box-shadow: none; }
@@ -1156,6 +1159,7 @@ pre {
         margin: 30px 0 0; } }
 
 .mybxslider {
+  max-height: 546px;
   overflow: hidden;
   /** VARIABLES
 	===================================*/
@@ -1253,7 +1257,7 @@ pre {
     width: 18px;
     height: 98px;
     text-indent: -9999px;
-    z-index: 9999;
+    z-index: 10;
     -webkit-transition: background-image .2s;
     transition: background-image .2s; }
   .mybxslider .bx-wrapper .bx-controls-direction a.disabled {
