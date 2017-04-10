@@ -2306,12 +2306,14 @@ pre {
     background-color: #c8c8c8;
     padding: 4px 12px;
     text-align: center;
+    border-bottom: none;
     border-left: 2px solid #fff;
     -webkit-box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.3);
     box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.3); }
     .car-price th:first-child {
       text-align: left;
-      border: none; }
+      border: none;
+      width: 205px; }
   .car-price td {
     padding: 10px 12px;
     text-align: center;
@@ -2322,7 +2324,8 @@ pre {
       text-align: left;
       font-size: 14px;
       color: #3a3b3b;
-      border: none; }
+      border: none;
+      width: 205px; }
     .car-price td a {
       color: #3a3b3b; }
       .car-price td a:link {

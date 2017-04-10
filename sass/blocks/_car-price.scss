@@ -18,11 +18,13 @@
 		background-color: #c8c8c8;
 		padding: 4px 12px;
 		text-align: center;
+		border-bottom: none;
 		border-left: 2px solid #fff;
 		box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.3);
 		&:first-child{
 			text-align: left;
 			border: none;
+			width: 205px;
 		}
 	}
 	td{
@@ -36,6 +38,7 @@
 			font-size: 14px;
 			color: $brown;
 			border: none;
+			width: 205px;
 		}
 		a{
 			@include link($brown, $brown);
