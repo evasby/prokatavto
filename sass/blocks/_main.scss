@@ -1,9 +1,12 @@
 .main{
-	margin: 0 0 73px 342px;
+	//margin: 0 0 73px 342px;
+	margin: 0 0 73px 3.25%;
+	float: left;
+	width: 71.5%;
 	background-color: #fdfeff;
 	box-shadow: 1px 3px 5px 0px rgba(0,0,0,0.27);
 	.front &{
-		margin: 0 0 0 342px;
+		margin: 0 0 0 3.25%;
 		@include break1{
 			margin: 0;
 		}
@@ -17,6 +20,8 @@
 	}
 	@include break1{
 		margin: 0;
+		float: none;
+		width: auto;
 	}
 	&_title{
 		padding: 24px 0 12px 22px;

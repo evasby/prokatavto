@@ -1,0 +1,58 @@
+.view-filters{
+	margin: 0 0 33px;
+	.views-exposed-widget{
+		padding: 0;
+		width: 180px;
+		margin: 0 18px 0 0;
+		@include break3{
+			float: none;
+			width: 220px;
+			margin: 0 auto 10px;
+		}
+	}
+	.views-widget-filter-field_category_tid{
+		width: 220px;
+	}
+	.views-submit-button{
+		float: right;
+		width: 140px;
+		margin: 0;
+		position: relative;
+		@include break3{
+			float: none;
+			width: 220px;
+			margin: 0 auto;
+			padding: 10px 0 0;
+		}
+		.form-submit{
+			margin: 24px 0 0;
+			float: right;
+			background-color: $green;
+			box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.4);
+			width: 140px;
+			height: 32px;
+			line-height: 32px;
+			font-size: 14px;
+			font-weight: bold;
+			text-transform: uppercase;
+			border: 0;
+			color: #fff;
+			text-decoration: none;
+			text-align: center;
+			cursor: pointer;
+			transition: background-color .2s;
+			&:hover{
+				background-color: $brown;
+			}
+			@include break3{
+				margin: 0;
+				float: none;
+				width: 220px;
+			}
+		}
+	}
+	label{
+		color: #3a3b3b;
+		margin: 0 0 5px;
+	}
+}
